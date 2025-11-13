@@ -1,0 +1,173 @@
+/* ===============================
+   home.css - Modern Minimalist Dashboard
+   =============================== */
+
+/* Reset kecil agar selaras tanpa ganggu sb-admin */
+.dashboard-wrapper {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+}
+
+.dashboard-wrapper h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+/* ---- CARD STATISTIK ---- */
+.stat-card {
+  border: none !important;
+  border-radius: 14px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 0.5rem 0;
+}
+
+.stat-card .card-body {
+  padding: 1.5rem 1rem;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+/* Responsif grid untuk card */
+@media (max-width: 991px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .row.text-center > [class*='col-md-3'] {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .row.text-center > [class*='col-md-3'] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ---- CHART CARD ---- */
+.chart-card {
+  border: none !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.chart-card .card-header {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  background: #343a40 !important;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.chart-container {
+  padding: 1.5rem;
+}
+
+.chart-container canvas {
+  max-height: 320px;
+}
+
+/* ---- Tampilan umum ---- */
+body {
+  background-color: #f7f9fc !important;
+}
+
+.card.shadow-sm {
+  box-shadow: none !important; /* Flat style */
+}
+
+.card.shadow-sm:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Tambahan spacing antar elemen */
+.mt-4 {
+  margin-top: 1.75rem !important;
+}
+.mb-3 {
+  margin-bottom: 1.25rem !important;
+}
+
+/* === PATCH VISUAL CARD DASHBOARD === */
+
+/* Warna dasar card agar tetap flat dan kontras */
+.stat-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Perbaikan warna teks untuk semua varian background */
+.stat-card.bg-primary,
+.stat-card.bg-success,
+.stat-card.bg-warning,
+.stat-card.bg-danger {
+  color: #ffffff !important;
+}
+
+.stat-card.bg-primary .card-title,
+.stat-card.bg-success .card-title,
+.stat-card.bg-warning .card-title,
+.stat-card.bg-danger .card-title {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.stat-card.bg-primary .stat-number,
+.stat-card.bg-success .stat-number,
+.stat-card.bg-warning .stat-number,
+.stat-card.bg-danger .stat-number {
+  color: #fff !important;
+}
+
+/* Optional: ubah warna dasar agar tetap modern & soft */
+.bg-primary { background-color: #2563eb !important; } /* biru flat */
+.bg-success { background-color: #16a34a !important; } /* hijau lembut */
+.bg-warning { background-color: #f59e0b !important; } /* kuning orange */
+.bg-danger  { background-color: #dc2626 !important; } /* merah lembut */
+
+/* Responsif padding */
+.stat-card .card-body {
+  padding: 1.25rem 1rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+/* letakkan ini di css/home.css atau custom css yang kamu pakai */
+/* ==== FIX: Chart container tampil penuh dan proporsional ==== */
+.chart-card .chart-container {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem !important;
+}
+
+.chart-card .chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

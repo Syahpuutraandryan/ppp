@@ -1,0 +1,99 @@
+/* === Modern Minimalist Theme for Sistem Absensi === */
+body {
+    background-color: #F9FAFB;
+    font-family: 'Poppins', sans-serif;
+    color: #111827;
+}
+
+.navbar-default {
+    background-color: #ffffff !important;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+    color: #2563EB !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.navbar-top-links li a {
+    color: #374151 !important;
+}
+
+#side-menu {
+    background-color: #FFFFFF;
+}
+
+#side-menu > li > a {
+    color: #1F2937;
+    padding: 12px 20px;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+#side-menu > li > a:hover {
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border-left: 3px solid #2563EB;
+}
+
+.nav-second-level li a {
+    background-color: #F3F4F6;
+    color: #374151;
+    padding: 10px 30px;
+    transition: all 0.2s ease;
+}
+
+.nav-second-level li a:hover {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+#page-wrapper {
+    padding: 30px;
+    background-color: #F9FAFB;
+    min-height: 100vh;
+}
+
+.panel, .card, .well {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: none !important;
+    background-color: #fff;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.dataTable thead {
+    background-color: #EFF6FF;
+    color: #1E3A8A;
+}
+
+table.dataTable tr:hover {
+    background-color: #F9FAFB;
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: #3B82F6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2563EB;
+}
+
+.btn-danger {
+    background-color: #EF4444;
+    border-radius: 8px;
+    border: none;
+}
